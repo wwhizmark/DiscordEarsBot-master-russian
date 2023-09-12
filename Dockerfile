@@ -22,6 +22,5 @@ RUN npm install pm2@latest -g
 # COPY settings.json /var/www/DiscordEarsBot-master-russian/settings.json
 
 # ENV DISCORD_TOK=
-# ENV WITAPIKEY=
 
 CMD git pull && npm update && pm2 start ecosystem.config.js
