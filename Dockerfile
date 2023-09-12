@@ -9,7 +9,7 @@ RUN apt-get -y upgrade
 RUN apt-get install -y git vim g++ cmake
 
 RUN apt-get -y install curl dirmngr apt-transport-https lsb-release ca-certificates
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_20.x | bash -
 RUN apt-get -y install nodejs 
 
 RUN git clone https://github.com/wwhizmark/DiscordEarsBot-master-russian.git .
